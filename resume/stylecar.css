@@ -1,0 +1,368 @@
+
+body {
+  background: black;
+  background: -webkit-linear-gradient(to right, black, #555, #999);
+  background: linear-gradient(to right, black, #111, #222);
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+     background: black;
+  background: -webkit-linear-gradient(to right, black, #555, #999);
+  background: linear-gradient(to right, black, #111, #222);
+  }
+}
+
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #BD5D38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+
+
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+.progress-circle {
+   font-size: 20px;
+   margin: 20px;
+   position:relative; /* so that children can be absolutely positioned */
+   padding: 0;
+   width: 5em;
+   height: 5em;
+   background-color: transparent; 
+   border-radius: 50%;
+   line-height: 5em;
+}
+
+.progress-circle:after{
+    border: none;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 4.3em;
+    height: 4.3em;
+    background: transparent;
+    content: " ";
+}
+/* Text inside the control */
+.progress-circle span {
+    position: absolute;
+    line-height: 5em;
+    width: 5em;
+    text-align: center;
+    display: block;
+    color: #53777A;
+    z-index: 2;
+}
+.progress-circle h4 {
+    position: relative;
+    margin-left:  -14px;
+    line-height: 10em;
+    width: 6em;
+    text-align: center;
+    display: inline;
+    color: #53777A;
+    z-index: 2;
+}
+.progress-circle p {
+
+    position: absolute;
+    line-height: 14em;
+    width: 6em;
+    text-align: center;
+    display: inline;
+    color: #53777A;
+}
+ 
+.progress-circle.blue span 
+{
+  color: blue;
+}
+.progress-circle.red span 
+{
+  color: red;
+}
+.progress-circle.yellow span 
+{
+  color: yellow;
+}
+.progress-circle.green span 
+{
+  color: green;
+}
+
+.progress-circle:not(.over50)  .left-half-clipper { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 5em;
+   height: 5em;
+   position: absolute; /* needed for clipping */
+   clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+}
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+   
+
+   
+}
+.value-bar {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 2.5em, 5em, 0);
+   width: 5em;
+   height: 5em;
+   border-radius: 50%;
+   border: 0.45em solid #53777A; /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+   
+  
+}
+.value-bar.blue{
+  border: 0.45em solid blue;
+}
+.value-bar.red{
+  border: 0.45em solid red;
+}
+.value-bar.yellow{
+  border: 0.45em solid yellow;
+}
+.value-bar.green{
+  border: 0.45em solid green;
+}
+/* Progress bar filling the whole right half for values above 50% */
+
+.progress-circle.over50 .first50-bar {
+   
+   position: absolute; 
+   clip: rect(0, 5em, 5em, 2.5em);
+   border-radius: 50%;
+   width: 5em;
+   height: 5em;
+}
+.progress-circle.over50.blue .first50-bar{
+  border: 0.45em solid blue;
+}
+.progress-circle.over50.red .first50-bar{
+  border: 0.45em solid red;
+}
+.progress-circle.over50.yellow .first50-bar{
+  border: 0.45em solid yellow;
+}
+.progress-circle.over50.green .first50-bar{
+  border: 0.45em solid green;
+}
+.progress-circle:not(.over50) .first50-bar{ display: none; }
+
+
+@keyframes spinhalf{
+  from{
+      transform: rotate(0deg); 
+  }
+  to
+  {
+     transform: rotate(180deg); 
+  }
+}
+@keyframes spin{
+  from{
+      transform: rotate(0deg);
+  }
+  to
+  {
+     transform: rotate(144deg); 
+  }
+  
+}
+@keyframes spin2{
+  from{
+      transform: rotate(180deg);
+  }
+  to
+  {
+     transform: rotate(270deg); 
+  }
+}
+@keyframes spin3{
+  from{
+      transform: rotate(180deg);
+  }
+  to
+  {
+     transform: rotate(324deg); 
+  }
+}
+@keyframes spin4{
+  from{
+      transform: rotate(0deg);
+  }
+  to
+  {
+     transform: rotate(72deg); 
+  }
+}
+.hidden{
+  display: none;
+}
+/* Progress bar rotation position */
+.progress-circle.p0 .value-bar { display: none; }
+.progress-circle.p1 .value-bar 
+{ 
+   
+   animation-name: spin;
+   animation-duration: 2000ms;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   transform: rotate(144deg); 
+   }
+.progress-circle.p2 .value-bar
+{
+   
+   animation-name: spin2;
+   animation-duration: 2000ms;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   transform: rotate(270deg); 
+}
+.progress-circle.p3 .value-bar 
+{ 
+   
+   animation-name: spin3;
+   animation-duration: 2000ms;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   transform: rotate(324deg); 
+}
+.progress-circle.p4 .value-bar 
+{ 
+   
+   animation-name: spin4;
+   animation-duration: 2000ms;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   transform: rotate(72deg); 
+}
